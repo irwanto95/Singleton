@@ -3,11 +3,12 @@
 
 template <class T>
 class Singleton
-{
+{	
+	static T* s_instance;
+
+protected:
 	Singleton() = default;
 	virtual ~Singleton() = default;
-	
-	static T* s_instance;
 
 public:
 	template <typename... Args>
