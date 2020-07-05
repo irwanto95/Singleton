@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29519.87
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SingletonExample", "SingletonExample.vcxproj", "{95F045A5-0772-4A73-9BBB-43FB9FAA8CCF}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Singleton", "..\..\source\prj\Singleton.vcxproj", "{447F6D9E-C0F5-4EAF-BDD6-41323001F67A}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Singleton", "..\..\..\source\Singleton\prj\Singleton.vcxproj", "{447F6D9E-C0F5-4EAF-BDD6-41323001F67A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
