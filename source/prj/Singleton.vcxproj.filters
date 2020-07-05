@@ -11,12 +11,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\Singleton.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\Singleton.h">
+    <ClInclude Include="..\include\Singleton\Singleton.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
