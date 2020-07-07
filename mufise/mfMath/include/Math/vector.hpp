@@ -1,21 +1,22 @@
 #ifndef _MF_VECTOR_HPP
 #define _MF_VECTOR_HPP
 
-#include <crtdbg.h>
+#include <limits>
+#include "Core/assert.hpp"
 
 namespace mufise
 {
 	namespace math
 	{
 		template<typename T>
-		class vector
+		class vector2
 		{
-			typedef vector<T> _type;
+			typedef vector2<T> _type;
 
 		public:
-			vector(T _x = 0, T _y = 0, T _z = 0);
-			vector(const _type& other);
-			~vector() = default;
+			vector2(T _x = 0, T _y = 0);
+			vector2(const _type& other);
+			~vector2() = default;
 
 			/*
 			*/
@@ -26,63 +27,80 @@ namespace mufise
 			_type cross(const _type& other);
 
 		public:
-			T x, y, z;
+			T x, y;
 
 		public:
+			inline _type operator*(const T value)
+			{
+				return _type(x * value, y * value);
+			};
+
+			inline _type operator/(const T value)
+			{
+				MF_ASSERT(value <= -std::numeric_limits<T>::epsilon()
+					|| value >= std::numeric_limits<T>::epsilon());
+
+				return _type(x * value, y * value);
+			};
+
 			inline _type operator+(const _type& other)
 			{
-				_type tmp;
-				tmp.x = x + other.x;
-				tmp.y = y + other.y;
-				tmp.z = z + other.z;
-
-				return tmp;
+				return _type(x + other.x, y + other.y);
 			};
 
-			_type operator-(const _type& other)
+			inline _type operator-(const _type& other)
 			{
-				_type tmp;
-				tmp.x = x - other.x;
-				tmp.y = y - other.y;
-				tmp.z = z - other.z;
-
-				return tmp;
+				return _type(x - other.x, y - other.y);
 			};
 
-			_type& operator=(const _type& other)
+			inline _type operator+=(const _type& other)
+			{
+				x += other.x;
+				y += other.y;
+				
+				return *this;
+			};
+
+			inline _type operator-=(const _type& other)
+			{
+				x -= other.x;
+				y -= other.y;
+
+				return *this;
+			};
+
+			inline _type& operator=(const _type& other)
 			{
 				x = other.x;
 				y = other.y;
-				z = other.z;
 
 				return *this;
 			};
 		};
 
 		template<typename T>
-		inline vector<T>::vector(T _x, T _y, T _z)
+		inline vector2<T>::vector2(T _x, T _y)
 			: x(_x)
 			, y(_y)
-			, z(_z)
 		{
 		}
 
 		template<typename T>
-		inline vector<T>::vector(const _type& other)
+		inline vector2<T>::vector2(const _type& other)
 		{
 			operator=(other);
 		}
 
 		template<typename T>
-		inline T vector<T>::dot(const _type& other)
+		inline T vector2<T>::dot(const _type& other)
 		{
-			return x * other.x + y * other.y + z * other.z;
+			return x * other.x + y * other.y;
 		}
 
 		template<typename T>
-		inline vector<T> vector<T>::cross(const _type& other)
+		inline vector2<T> vector2<T>::cross(const _type& other)
 		{
-			_ASSERT_EXPR(0, "cross not implemented yet");
+			//MF_ASSERT(0, "cross not implemented yet");
 			return _type();
 		}
 
@@ -90,10 +108,10 @@ namespace mufise
 		/*
 		**	
 		*/
-		typedef vector<short>	vecs;
-		typedef vector<int>		veci;
-		typedef vector<float>	vecf;
-		typedef vector<double>	vecd;
+		typedef vector2<short>	vec2s;
+		typedef vector2<int>	vec2i;
+		typedef vector2<float>	vec2f;
+		typedef vector2<double>	vec2d;
 	} // math
 } // mufise
 

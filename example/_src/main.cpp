@@ -1,6 +1,7 @@
 #include <stdlib.h>
 
 #include "Math/vector.hpp"
+#include "Core/assert.hpp"
 #include "Singleton/Singleton.h"
 
 using namespace mufise;
@@ -49,9 +50,15 @@ int main()
 	Object1::CreateInstance(5);
 	Object2::CreateInstance(6, 'g');
 
-	math::vector<int> v2i(2,3);
-	math::vector<int> v2h(v2i);
-	math::vecf v3f;
+	math::vector2<int> v2i(2,3);
+	math::vector2<int> v2h(v2i);
+	math::vec2f v3f;
+	math::vec2f v3f2(0.3f, 0.1f);
+
+	v3f = v3f2 * 2;
+	v3f = v3f2 * 0;
+	v3f = v3f2 / 1;
+	v3f = v3f2 / 0;
 
 	Object0::DeleteInstance();
 	Object1::DeleteInstance();

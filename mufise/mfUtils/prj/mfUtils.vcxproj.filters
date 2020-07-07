@@ -8,10 +8,16 @@
     <Filter Include="include\Singleton">
       <UniqueIdentifier>{442a5de1-b087-453f-a447-9b72a8281b85}</UniqueIdentifier>
     </Filter>
+    <Filter Include="include\Core">
+      <UniqueIdentifier>{d1c0a94d-9d79-47d5-b3e4-cee1b5f90d36}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\include\Singleton\Singleton.h">
       <Filter>include\Singleton</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Core\assert.hpp">
+      <Filter>include\Core</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
