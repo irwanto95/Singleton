@@ -13,7 +13,7 @@ Calculator::~Calculator()
 	cout << "~Calculator" << endl;
 }
 
-void Calculator::OnKeyPressed(const Input& input)
+void Calculator::OnKeyPressed(const InputKey& input)
 {
 	// to do
 }

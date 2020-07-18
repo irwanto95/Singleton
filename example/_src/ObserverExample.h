@@ -9,7 +9,7 @@ public:
 	Calculator();
 	~Calculator();
 
-	void OnKeyPressed(const mufise::utils::Input& input);
+	void OnKeyPressed(const mufise::utils::InputKey& input);
 };
 
 MAKE_SHARED(Calculator);

@@ -22,12 +22,10 @@ namespace mufise
 
 			virtual si16	GetType() const { return KEY; };
 			
-			const bool		HasConsumed() { return m_bConsumed; }
-			const si16		GetState() { return m_state; }
+			const si16		GetState() const { return m_state; }
 			const si16&		GetValue() const;
 
 		private:
-			bool m_bConsumed;
 			si16 m_state;
 			sbit m_key;
 		};

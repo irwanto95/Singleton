@@ -8,7 +8,6 @@ namespace mufise
 		InputKey::InputKey(sbit key, si16 state)
 			: m_key(key)
 			, m_state(state)
-			, m_bConsumed(false)
 		{
 		}
 

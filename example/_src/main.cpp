@@ -67,8 +67,8 @@ int main()
 	DECL_SHARED(Calculator, cal)();
 
 	InputManager::GetInstance()->AttachObserver(cal);
-	InputManager::GetInstance()->Capture(InputKey(0x01));
-	InputManager::GetInstance()->Capture(InputKey(0x02));
+	InputManager::GetInstance()->Capture(InputKey(0x01, InputKey::KEY_PRESSED));
+	InputManager::GetInstance()->Capture(InputKey(0x02, InputKey::KEY_PRESSED));
 	InputManager::GetInstance()->Update();
 	InputManager::DeleteInstance();
 

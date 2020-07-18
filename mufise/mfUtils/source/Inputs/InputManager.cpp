@@ -95,7 +95,14 @@ namespace mufise
 		{
 			for (auto obs : m_observers)
 			{
-				obs->OnKeyPressed(key);
+				if (key.GetState() == InputKey::KEY_PRESSED)
+				{
+					obs->OnKeyPressed(key);
+				}
+				else if (key.GetState() == InputKey::KEY_RELEASED)
+				{
+					// to do
+				}
 			}
 		}
 	}
