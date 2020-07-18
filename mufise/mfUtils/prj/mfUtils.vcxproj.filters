@@ -37,9 +37,6 @@
     <ClInclude Include="..\include\Inputs\InputKey.h">
       <Filter>include\Inputs</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\pch.h">
-      <Filter>include</Filter>
-    </ClInclude>
     <ClInclude Include="..\include\Inputs\InputManager.h">
       <Filter>include\Inputs</Filter>
     </ClInclude>
@@ -52,6 +49,9 @@
     <ClInclude Include="..\include\Core\declaration.hpp">
       <Filter>include\Core</Filter>
     </ClInclude>
+    <ClInclude Include="..\include\mfupch.h">
+      <Filter>include</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\source\Inputs\Input.cpp">
@@ -60,11 +60,11 @@
     <ClCompile Include="..\source\Inputs\InputKey.cpp">
       <Filter>source\Inputs</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\pch.cpp">
-      <Filter>source</Filter>
-    </ClCompile>
     <ClCompile Include="..\source\Inputs\InputManager.cpp">
       <Filter>source\Inputs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\mfupch.cpp">
+      <Filter>source</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
