@@ -128,6 +128,19 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\_src\main.cpp" />
+    <ClCompile Include="..\_src\ObserverExample.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\mufise\mfMath\prj\mfMath.vcxproj">
+      <Project>{2afce575-fdd5-4475-96e7-fa3abf08d55c}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\mufise\mfUtils\prj\mfUtils.vcxproj">
+      <Project>{447f6d9e-c0f5-4eaf-bdd6-41323001f67a}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\_src\ObserverExample.h" />
+    <ClInclude Include="..\_src\SingletonExample.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

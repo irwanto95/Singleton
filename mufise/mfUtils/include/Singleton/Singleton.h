@@ -1,5 +1,5 @@
-#ifndef _SINGLETON_H
-#define _SINGLETON_H
+#ifndef _MF_SINGLETON_H
+#define _MF_SINGLETON_H
 
 #include <iostream>
 
@@ -41,7 +41,7 @@ namespace mufise
 		}
 
 		template <class T>
-		static T* Singleton<T>::GetInstance()
+		inline T* Singleton<T>::GetInstance()
 		{
 			return s_instance;
 		}
@@ -64,4 +64,4 @@ namespace mufise
 	} // utils
 } // mufise
 
-#endif // !_SINGLETON_H
+#endif // !_MF_SINGLETON_H

@@ -1,0 +1,19 @@
+#include "pch.h"
+#include "ObserverExample.h"
+
+using namespace mufise::utils;
+
+Calculator::Calculator()
+{
+	cout << "Calculator" << endl;
+}
+
+Calculator::~Calculator()
+{
+	cout << "~Calculator" << endl;
+}
+
+void Calculator::OnKeyPressed(const Input& input)
+{
+	// to do
+}
