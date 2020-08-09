@@ -1,7 +1,7 @@
 #ifndef _MF_INPUT_OBSERVER_H
 #define _MF_INPUT_OBSERVER_H
 
-#include "Inputs/InputKey.h"
+#include "mfUtils/Inputs/InputKey.h"
 
 namespace mufise
 {
@@ -17,7 +17,7 @@ namespace mufise
 			virtual void OnKeyPressed(const InputKey& input) = 0;
 		};	
 	
-		MAKE_SHARED(InputObserver);
+		DECL_SHARED(InputObserver);
 	}
 }
 

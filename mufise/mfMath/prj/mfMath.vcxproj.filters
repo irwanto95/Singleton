@@ -12,21 +12,24 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\include\framework.h">
-      <Filter>include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\include\pch.h">
-      <Filter>include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\include\math\vector.hpp">
-      <Filter>include\mfMath</Filter>
-    </ClInclude>
+    <Filter Include="include\mfMath\Math">
+      <UniqueIdentifier>{d24fe69e-b073-42a9-9362-afd446b2f1de}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\source\pch.cpp">
       <Filter>source</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\mfMath\Math\vector.hpp">
+      <Filter>include\mfMath\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\mfMath\framework.h">
+      <Filter>include\mfMath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\mfMath\pch.h">
+      <Filter>include\mfMath</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

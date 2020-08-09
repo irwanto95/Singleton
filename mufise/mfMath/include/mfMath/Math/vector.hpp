@@ -2,7 +2,7 @@
 #define _MF_VECTOR_HPP
 
 #include <limits>
-#include "Core/assert.hpp"
+#include "mfUtils/Core/assert.hpp"
 
 namespace mufise
 {

@@ -1,7 +1,7 @@
 #ifndef _MF_INPUT_MANAGER_H
 #define _MF_INPUT_MANAGER_H
 
-#include "Singleton/Singleton.h"
+#include "mfutils/Singleton/Singleton.h"
 #include "InputKey.h"
 #include "InputObserver.h"
 

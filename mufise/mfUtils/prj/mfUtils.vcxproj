@@ -19,27 +19,33 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\include\Core\assert.hpp" />
-    <ClInclude Include="..\include\Core\declaration.hpp" />
-    <ClInclude Include="..\include\Core\memory.hpp" />
-    <ClInclude Include="..\include\Core\types.h" />
-    <ClInclude Include="..\include\Inputs\Input.h" />
-    <ClInclude Include="..\include\Inputs\InputKey.h" />
-    <ClInclude Include="..\include\Inputs\InputManager.h" />
-    <ClInclude Include="..\include\Inputs\InputObserver.h" />
-    <ClInclude Include="..\include\mfupch.h" />
-    <ClInclude Include="..\include\Singleton\Singleton.h" />
-  </ItemGroup>
-  <ItemGroup>
+    <ClCompile Include="..\include\mfUtils\Utils\Utils.cpp" />
     <ClCompile Include="..\source\Inputs\Input.cpp" />
     <ClCompile Include="..\source\Inputs\InputKey.cpp" />
     <ClCompile Include="..\source\Inputs\InputManager.cpp" />
-    <ClCompile Include="..\source\mfupch.cpp">
+    <ClCompile Include="..\source\pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mfUtils/pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mfUtils/pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mfUtils/pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mfUtils/pch.h</PrecompiledHeaderFile>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\mfUtils\Core\assert.hpp" />
+    <ClInclude Include="..\include\mfUtils\Core\declaration.hpp" />
+    <ClInclude Include="..\include\mfUtils\Core\memory.hpp" />
+    <ClInclude Include="..\include\mfUtils\Core\types.h" />
+    <ClInclude Include="..\include\mfUtils\Inputs\Input.h" />
+    <ClInclude Include="..\include\mfUtils\Inputs\InputKey.h" />
+    <ClInclude Include="..\include\mfUtils\Inputs\InputManager.h" />
+    <ClInclude Include="..\include\mfUtils\Inputs\InputObserver.h" />
+    <ClInclude Include="..\include\mfUtils\pch.h" />
+    <ClInclude Include="..\include\mfUtils\Singleton\Singleton.h" />
+    <ClInclude Include="..\include\mfUtils\Utils\Utils.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -101,7 +107,7 @@
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PrecompiledHeader>Use</PrecompiledHeader>
-      <PrecompiledHeaderFile>mfupch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile>mfUtils/pch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -115,7 +121,7 @@
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PrecompiledHeader>Use</PrecompiledHeader>
-      <PrecompiledHeaderFile>mfupch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile>mfUtils/pch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -131,7 +137,7 @@
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PrecompiledHeader>Use</PrecompiledHeader>
-      <PrecompiledHeaderFile>mfupch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile>mfUtils/pch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -149,7 +155,7 @@
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PrecompiledHeader>Use</PrecompiledHeader>
-      <PrecompiledHeaderFile>mfupch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile>mfUtils/pch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

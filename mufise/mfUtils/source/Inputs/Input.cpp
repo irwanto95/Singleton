@@ -1,5 +1,5 @@
-#include "mfupch.h"
-#include "Inputs/Input.h"
+#include "mfUtils/pch.h"
+#include "mfUtils/Inputs/Input.h"
 
 namespace mufise
 {

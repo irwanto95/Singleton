@@ -1,6 +1,6 @@
-#include "mfupch.h"
+#include "mfUtils/pch.h"
 
-#include "Inputs/InputManager.h"
+#include "mfUtils/Inputs/InputManager.h"
 
 namespace mufise
 {
@@ -13,10 +13,7 @@ namespace mufise
 
 		InputManager::~InputManager()
 		{
-			for (auto obs : m_observers)
-			{
-				obs.reset();
-			}
+			m_observers.clear();
 		}
 
 		void InputManager::Capture(const Input& input)

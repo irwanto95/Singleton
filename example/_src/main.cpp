@@ -4,12 +4,12 @@
 /*
 	pch.h
 */
-#include "Math/vector.hpp"
-#include "Core/assert.hpp"
-#include "Core/declaration.hpp"
-#include "Core/memory.hpp"
-#include "Core/types.h"
-#include "Inputs/InputManager.h"
+#include "mfMath/Math/vector.hpp"
+#include "mfUtils/Core/assert.hpp"
+#include "mfUtils/Core/declaration.hpp"
+#include "mfUtils/Core/memory.hpp"
+#include "mfUtils/Core/types.h"
+#include "mfUtils/Inputs/InputManager.h"
 
 #include "../../example/_src/ObserverExample.h"
 #include "../../example/_src/SingletonExample.h"
@@ -64,7 +64,7 @@ int main()
 	*/
 	InputManager::CreateInstance();
 
-	DECL_SHARED(Calculator, cal)();
+	MAKE_SHARED(Calculator, cal)();
 
 	InputManager::GetInstance()->AttachObserver(cal);
 	InputManager::GetInstance()->Capture(InputKey(0x01, InputKey::KEY_PRESSED));
@@ -84,6 +84,14 @@ int main()
 	v3f = v3f2 * 0;
 	v3f = v3f2 / 1;
 	//v3f = v3f2 / 0;
+
+	std::vector<int> g;
+	g.resize(10);
+	g[0] = 1;
+	g[1] = 34;
+	g[2] = 10;
+	g.resize(3);
+	g.clear();
 
 	_CrtDumpMemoryLeaks();
 	return EXIT_SUCCESS;
