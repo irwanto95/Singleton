@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\include\mfUtils\Utils\Utils.cpp" />
+    <ClCompile Include="..\source\File\File.cpp" />
     <ClCompile Include="..\source\Inputs\Input.cpp" />
     <ClCompile Include="..\source\Inputs\InputKey.cpp" />
     <ClCompile Include="..\source\Inputs\InputManager.cpp" />
@@ -39,6 +40,7 @@
     <ClInclude Include="..\include\mfUtils\Core\declaration.hpp" />
     <ClInclude Include="..\include\mfUtils\Core\memory.hpp" />
     <ClInclude Include="..\include\mfUtils\Core\types.h" />
+    <ClInclude Include="..\include\mfUtils\File\File.h" />
     <ClInclude Include="..\include\mfUtils\Inputs\Input.h" />
     <ClInclude Include="..\include\mfUtils\Inputs\InputKey.h" />
     <ClInclude Include="..\include\mfUtils\Inputs\InputManager.h" />
@@ -108,6 +110,7 @@
       <AdditionalIncludeDirectories>..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>mfUtils/pch.h</PrecompiledHeaderFile>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -122,6 +125,7 @@
       <AdditionalIncludeDirectories>..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>mfUtils/pch.h</PrecompiledHeaderFile>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -138,6 +142,7 @@
       <AdditionalIncludeDirectories>..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>mfUtils/pch.h</PrecompiledHeaderFile>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -156,6 +161,7 @@
       <AdditionalIncludeDirectories>..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>mfUtils/pch.h</PrecompiledHeaderFile>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

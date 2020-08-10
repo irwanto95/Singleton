@@ -29,6 +29,12 @@
     <Filter Include="source\Utils">
       <UniqueIdentifier>{2940e60d-7d23-4b0e-80c6-c05e47b721f6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="include\mfUtils\File">
+      <UniqueIdentifier>{419a85f3-8f1f-498c-b639-7b6d4f7756a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\File">
+      <UniqueIdentifier>{421e8bfc-c77d-45c2-b4e1-40ce45a9d8ac}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\source\Inputs\Input.cpp">
@@ -45,6 +51,9 @@
     </ClCompile>
     <ClCompile Include="..\include\mfUtils\Utils\Utils.cpp">
       <Filter>source\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\File\File.cpp">
+      <Filter>source\File</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -80,6 +89,9 @@
     </ClInclude>
     <ClInclude Include="..\include\mfUtils\Utils\Utils.h">
       <Filter>include\mfUtils\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\mfUtils\File\File.h">
+      <Filter>include\mfUtils\File</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

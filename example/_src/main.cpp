@@ -4,12 +4,16 @@
 /*
 	pch.h
 */
+#include "mfMath/pch.h"
+#include "mfUtils/pch.h"
+
 #include "mfMath/Math/vector.hpp"
 #include "mfUtils/Core/assert.hpp"
 #include "mfUtils/Core/declaration.hpp"
 #include "mfUtils/Core/memory.hpp"
 #include "mfUtils/Core/types.h"
 #include "mfUtils/Inputs/InputManager.h"
+#include "mfUtils/File/File.h"
 
 #include "../../example/_src/ObserverExample.h"
 #include "../../example/_src/SingletonExample.h"
@@ -92,6 +96,17 @@ int main()
 	g[2] = 10;
 	g.resize(3);
 	g.clear();
+
+	FILE* pFile;
+	char buffer[] = { 'x' , 'y' , 'z' };
+	pFile = fopen("myfile.bin", "w");
+	fwrite(buffer, sizeof(char), sizeof(buffer), pFile);
+	fclose(pFile);
+
+	mufise::utils::File file;
+	file.Open("mfFile2.bin", mufise::utils::File::EMode::Mode_WriteBin);
+	file.Write(buffer, sizeof(buffer));
+	file.Close();
 
 	_CrtDumpMemoryLeaks();
 	return EXIT_SUCCESS;
