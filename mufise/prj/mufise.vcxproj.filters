@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="mfMath">
+      <UniqueIdentifier>{cccf122b-5216-47e7-ba99-b66960d942e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mfUtils">
+      <UniqueIdentifier>{ce8d50d1-389b-4901-9bc4-2001914dc9ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mfMath\Type">
+      <UniqueIdentifier>{47129be0-a78f-4ace-a851-ac7fe500415b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mfUtils\Core">
+      <UniqueIdentifier>{9dbb80a8-7114-4a68-b21d-f265b80c4e13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mfUtils\File">
+      <UniqueIdentifier>{ca638b6f-e3ca-4fa7-b144-778dd7969fe4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mfUtils\IO">
+      <UniqueIdentifier>{c6168a8a-213a-4132-967f-faf244e5d6bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mfUtils\Singleton">
+      <UniqueIdentifier>{938f7d64-e6a2-49ed-b224-abd74cdeb863}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\mufise\mfUtils\Utils.h">
+      <Filter>mfUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\mufise\mfUtils\Core\Types.h">
+      <Filter>mfUtils\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\mufise\mfUtils\File\File.h">
+      <Filter>mfUtils\File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\mufise\mfUtils\IO\InputManager.h">
+      <Filter>mfUtils\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\mufise\mfUtils\IO\InputObserver.h">
+      <Filter>mfUtils\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\mufise\mfUtils\IO\Input.h">
+      <Filter>mfUtils\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\mufise\mfUtils\IO\InputKey.h">
+      <Filter>mfUtils\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\mufise\mfUtils\Singleton\Singleton.h">
+      <Filter>mfUtils\Singleton</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\mufise\mfMath\Type\Vector.h">
+      <Filter>mfMath\Type</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\mufise\mfUtils\Core\Assert.h">
+      <Filter>mfUtils\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\mufise\mfUtils\Core\Declaration.h">
+      <Filter>mfUtils\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\mufise\mfUtils\Core\Memory.h">
+      <Filter>mfUtils\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\mfpch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\include\mufise\mfUtils\Utils.cpp">
+      <Filter>mfUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\mfpch.cpp" />
+    <ClCompile Include="..\source\utils\file\File.cpp" />
+    <ClCompile Include="..\source\utils\IO\Input.cpp" />
+    <ClCompile Include="..\source\utils\IO\InputKey.cpp" />
+    <ClCompile Include="..\source\utils\IO\InputManager.cpp" />
+    <ClCompile Include="..\source\mfUtils\File\File.cpp">
+      <Filter>mfUtils\File</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\mfUtils\IO\InputManager.cpp">
+      <Filter>mfUtils\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\mfUtils\IO\Input.cpp">
+      <Filter>mfUtils\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\mfUtils\IO\InputKey.cpp">
+      <Filter>mfUtils\IO</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

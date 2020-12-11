@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.1000
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mufiseExample", "mufiseExample.vcxproj", "{ECE4BFED-875A-46D1-98EF-7B300349E3F3}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mufise", "..\..\mufise\prj\mufise.vcxproj", "{4F19D74B-DFB9-487C-8EAA-99461D544CBE}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mufise", "mufise.vcxproj", "{4F19D74B-DFB9-487C-8EAA-99461D544CBE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,14 +13,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{ECE4BFED-875A-46D1-98EF-7B300349E3F3}.Debug|x64.ActiveCfg = Debug|x64
-		{ECE4BFED-875A-46D1-98EF-7B300349E3F3}.Debug|x64.Build.0 = Debug|x64
-		{ECE4BFED-875A-46D1-98EF-7B300349E3F3}.Debug|x86.ActiveCfg = Debug|Win32
-		{ECE4BFED-875A-46D1-98EF-7B300349E3F3}.Debug|x86.Build.0 = Debug|Win32
-		{ECE4BFED-875A-46D1-98EF-7B300349E3F3}.Release|x64.ActiveCfg = Release|x64
-		{ECE4BFED-875A-46D1-98EF-7B300349E3F3}.Release|x64.Build.0 = Release|x64
-		{ECE4BFED-875A-46D1-98EF-7B300349E3F3}.Release|x86.ActiveCfg = Release|Win32
-		{ECE4BFED-875A-46D1-98EF-7B300349E3F3}.Release|x86.Build.0 = Release|Win32
 		{4F19D74B-DFB9-487C-8EAA-99461D544CBE}.Debug|x64.ActiveCfg = Debug|x64
 		{4F19D74B-DFB9-487C-8EAA-99461D544CBE}.Debug|x64.Build.0 = Debug|x64
 		{4F19D74B-DFB9-487C-8EAA-99461D544CBE}.Debug|x86.ActiveCfg = Debug|Win32
@@ -36,6 +26,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {8AC7303F-3B62-460D-83AC-BB6B5A4E0B27}
+		SolutionGuid = {54E5D892-1613-4A0C-91AF-5AEE9559A371}
 	EndGlobalSection
 EndGlobal

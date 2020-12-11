@@ -1,7 +1,7 @@
 #ifndef _MF_OBSERVER_EXAMPLE_H
 #define _MF_OBSERVER_EXAMPLE_H
 
-#include "mfUtils/Inputs/InputObserver.h"
+#include "mufise/mfUtils/IO/InputObserver.h"
 
 class Calculator : public mufise::utils::InputObserver
 {

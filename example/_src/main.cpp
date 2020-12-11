@@ -1,19 +1,12 @@
-#include <stdlib.h>
-#include <vector>
-
 /*
 	pch.h
 */
-#include "mfMath/pch.h"
-#include "mfUtils/pch.h"
+#include "mfpch.h"
 
-#include "mfMath/Math/vector.hpp"
-#include "mfUtils/Core/assert.hpp"
-#include "mfUtils/Core/declaration.hpp"
-#include "mfUtils/Core/memory.hpp"
-#include "mfUtils/Core/types.h"
-#include "mfUtils/Inputs/InputManager.h"
-#include "mfUtils/File/File.h"
+#include "mufise/mfMath/Type/Vector.h"
+#include "mufise/mfUtils/Core/Memory.h"
+#include "mufise/mfUtils/IO/InputManager.h"
+#include "mufise/mfUtils/File/File.h"
 
 #include "../../example/_src/ObserverExample.h"
 #include "../../example/_src/SingletonExample.h"
@@ -90,6 +83,7 @@ int main()
 	//v3f = v3f2 / 0;
 
 	std::vector<int> g;
+
 	g.resize(10);
 	g[0] = 1;
 	g[1] = 34;
