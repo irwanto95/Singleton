@@ -1,0 +1,6 @@
+#ifndef MFUTILS_CONFIG_H
+#define MFUTILS_CONFIG_H
+
+#define MF_USE_ASSERT	1
+
+#endif //!MFUTILS_CONFIG_H

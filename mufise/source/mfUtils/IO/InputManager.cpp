@@ -29,7 +29,7 @@ namespace mufise
 
 		void InputManager::Update()
 		{
-			DECL_IT_ONLY(Keys, m_keysQueue, key);
+			DECL_IT(Keys, m_keysQueue, key);
 			while (keyIt != m_keysQueue.end())
 			{
 				switch (keyIt->GetState())
@@ -59,7 +59,7 @@ namespace mufise
 			}
 		}
 
-		void InputManager::AttachObserver(InputObserverPtr pObserver)
+		void InputManager::AttachObserver(InputObserverSPtr pObserver)
 		{
 			Observers::iterator it = FIND_IT(m_observers, pObserver);
 
@@ -73,7 +73,7 @@ namespace mufise
 			}
 		}
 
-		void InputManager::DetachObserver(InputObserverPtr pObserver)
+		void InputManager::DetachObserver(InputObserverSPtr pObserver)
 		{
 			Observers::iterator it = FIND_IT(m_observers, pObserver);
 

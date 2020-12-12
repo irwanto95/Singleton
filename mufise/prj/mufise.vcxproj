@@ -125,9 +125,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="..\include\mfpch.h" />
+    <ClInclude Include="..\include\mufise\config.h" />
     <ClInclude Include="..\include\mufise\mfMath\Type\Vector.h" />
+    <ClInclude Include="..\include\mufise\mfUtils\config.h" />
     <ClInclude Include="..\include\mufise\mfUtils\Core\Assert.h" />
-    <ClInclude Include="..\include\mufise\mfUtils\Core\Declaration.h" />
+    <ClInclude Include="..\include\mufise\mfUtils\Core\Macro.h" />
     <ClInclude Include="..\include\mufise\mfUtils\Core\Memory.h" />
     <ClInclude Include="..\include\mufise\mfUtils\Core\Types.h" />
     <ClInclude Include="..\include\mufise\mfUtils\File\File.h" />

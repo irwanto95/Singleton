@@ -54,11 +54,15 @@
     <ClInclude Include="..\include\mufise\mfUtils\Core\Assert.h">
       <Filter>mfUtils\Core</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\mufise\mfUtils\Core\Declaration.h">
-      <Filter>mfUtils\Core</Filter>
-    </ClInclude>
     <ClInclude Include="..\include\mufise\mfUtils\Core\Memory.h">
       <Filter>mfUtils\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\mufise\mfUtils\Core\Macro.h">
+      <Filter>mfUtils\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\mufise\config.h" />
+    <ClInclude Include="..\include\mufise\mfUtils\config.h">
+      <Filter>mfUtils</Filter>
     </ClInclude>
     <ClInclude Include="..\include\mfpch.h" />
   </ItemGroup>
@@ -67,10 +71,6 @@
       <Filter>mfUtils</Filter>
     </ClCompile>
     <ClCompile Include="..\source\mfpch.cpp" />
-    <ClCompile Include="..\source\utils\file\File.cpp" />
-    <ClCompile Include="..\source\utils\IO\Input.cpp" />
-    <ClCompile Include="..\source\utils\IO\InputKey.cpp" />
-    <ClCompile Include="..\source\utils\IO\InputManager.cpp" />
     <ClCompile Include="..\source\mfUtils\File\File.cpp">
       <Filter>mfUtils\File</Filter>
     </ClCompile>

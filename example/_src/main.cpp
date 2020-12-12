@@ -13,55 +13,20 @@
 
 using namespace mufise::math;
 using namespace mufise::utils;
-//
-//class Object0 : public utils::Singleton<Object0>
-//{
-//public:
-//	Object0()
-//		: m(0)
-//	{
-//	};
-//	
-//private:
-//	int m;
-//};
-//
-//class Object1 : public utils::Singleton<Object1>
-//{
-//public:
-//	Object1(int _m)
-//		: m(_m)
-//	{
-//	};
-//
-//private:
-//	int m;
-//};
-//
-//class Object2 : public utils::Singleton<Object2>
-//{
-//public:
-//	Object2(int _m, char _c)
-//		: m(_m)
-//		, c(_c)
-//	{
-//	};
-//
-//private:
-//	int m;
-//	char c;
-//};
 
 int main()
 {
 	_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
+
+	vector<int> vint;
+	DECL_IT_END(vector<int>, vint, ivint);
 
 	/*
 		mfUtils
 	*/
 	InputManager::CreateInstance();
 
-	MAKE_SHARED(Calculator, cal)();
+	DECL_SHARED(Calculator, cal)();
 
 	InputManager::GetInstance()->AttachObserver(cal);
 	InputManager::GetInstance()->Capture(InputKey(0x01, InputKey::KEY_PRESSED));

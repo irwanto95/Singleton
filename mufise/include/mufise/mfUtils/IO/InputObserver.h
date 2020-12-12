@@ -17,7 +17,7 @@ namespace mufise
 			virtual void OnKeyPressed(const InputKey& input) = 0;
 		};	
 	
-		DECL_SHARED(InputObserver);
+		DECL_SMART_PTR(InputObserver);
 	}
 }
 

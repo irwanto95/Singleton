@@ -5,7 +5,7 @@
 #include <vector>
 
 #include "mufise/mfUtils/Core/Assert.h"
-#include "mufise/mfUtils/Core/Declaration.h"
+#include "mufise/mfUtils/Core/Macro.h"
 #include "mufise/mfUtils/Core/Types.h"
 
 using namespace std;

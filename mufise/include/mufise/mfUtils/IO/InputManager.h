@@ -12,8 +12,8 @@ namespace mufise
 		class InputManager : public Singleton<InputManager>
 		{
 		public:
-			LISTV(InputKey)			Keys;
-			LISTV(InputObserverPtr)	Observers;
+			LISTV(InputKey)				Keys;
+			LISTV(InputObserverSPtr)	Observers;
 
 			InputManager();
 			~InputManager();
@@ -21,8 +21,8 @@ namespace mufise
 			void Capture(const Input& input);
 			void Update();
 
-			void AttachObserver(InputObserverPtr pObserver);
-			void DetachObserver(InputObserverPtr pObserver);
+			void AttachObserver(InputObserverSPtr pObserver);
+			void DetachObserver(InputObserverSPtr pObserver);
 
 		private:
 			void DispatchKey(const InputKey& key);

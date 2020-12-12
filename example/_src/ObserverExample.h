@@ -12,6 +12,6 @@ public:
 	void OnKeyPressed(const mufise::utils::InputKey& input);
 };
 
-DECL_SHARED(Calculator);
+MAKE_SHARED(Calculator);
 
 #endif // !_MF_OBSERVER_EXAMPLE_H
