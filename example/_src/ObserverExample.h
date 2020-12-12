@@ -3,13 +3,13 @@
 
 #include "mufise/mfUtils/IO/InputObserver.h"
 
-class Calculator : public mufise::utils::InputObserver
+class Calculator : public mufise::InputObserver
 {
 public:
 	Calculator();
 	~Calculator();
 
-	void OnKeyPressed(const mufise::utils::InputKey& input);
+	void OnKeyPressed(const mufise::InputKey& input);
 };
 
 MAKE_SHARED(Calculator);

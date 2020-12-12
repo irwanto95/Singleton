@@ -11,8 +11,7 @@
 #include "../../example/_src/ObserverExample.h"
 #include "../../example/_src/SingletonExample.h"
 
-using namespace mufise::math;
-using namespace mufise::utils;
+using namespace mufise;
 
 int main()
 {
@@ -62,8 +61,8 @@ int main()
 	fwrite(buffer, sizeof(char), sizeof(buffer), pFile);
 	fclose(pFile);
 
-	mufise::utils::File file;
-	file.Open("mfFile2.bin", mufise::utils::File::EMode::Mode_WriteBin);
+	mufise::File file;
+	file.Open("mfFile2.bin", mufise::File::EMode::Mode_WriteBin);
 	file.Write(buffer, sizeof(buffer));
 	file.Close();
 

@@ -8,7 +8,6 @@ namespace mufise
 	/*
 		Integers
 	*/
-
 	typedef int8_t		si8;
 	typedef int16_t		si16;
 	typedef int32_t		si32;
@@ -27,7 +26,6 @@ namespace mufise
 	/*
 		Bits
 	*/
-
 	typedef int8_t		sbit8;
 	typedef int16_t		sbit16;
 	typedef int32_t		sbit32;
@@ -52,7 +50,6 @@ namespace mufise
 #define LISTV(x)	typedef std::vector<x>
 #define LISTL(x)	typedef std::list<x>
 #define LISTD(x)	typedef std::deque<x>
-
-}
+} // mufise
 
 #endif // !_MF_TYPES_H

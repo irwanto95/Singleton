@@ -5,20 +5,17 @@
 
 namespace mufise
 {
-	namespace utils
+	class InputObserver
 	{
-		class InputObserver
-		{
-		protected:
-			InputObserver() {};
-			virtual ~InputObserver() {};
+	protected:
+		InputObserver() {};
+		virtual ~InputObserver() {};
 
-		public:
-			virtual void OnKeyPressed(const InputKey& input) = 0;
-		};	
+	public:
+		virtual void OnKeyPressed(const InputKey& input) = 0;
+	};	
 	
-		DECL_SMART_PTR(InputObserver);
-	}
-}
+	MAKE_SMART_PTR(InputObserver);
+} // mufise
 
 #endif // !_MF_INPUT_OBSERVER_H

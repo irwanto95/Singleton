@@ -1,6 +1,7 @@
 #ifndef _MF_ASSERT_HPP
 #define _MF_ASSERT_HPP
 
+#include <assert.h>
 #include "mufise/config.h"
 
 #if MF_USE_ASSERT

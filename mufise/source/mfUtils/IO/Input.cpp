@@ -3,11 +3,8 @@
 
 namespace mufise
 {
-	namespace utils
+	Input::Input()
+		: m_id(-1)
 	{
-		Input::Input()
-			: m_id(-1)
-		{
-		}
 	}
-}
+} // mufise

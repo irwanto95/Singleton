@@ -3,27 +3,24 @@
 
 namespace mufise
 {
-	namespace utils
+	class Input
 	{
-		class Input
+	public:
+		enum IType
 		{
-		public:
-			enum IType
-			{
-				NONE = -1,
-				MOUSE,
-				KEY
-			};
-
-			Input();
-			virtual ~Input() {};
-
-			virtual si16 GetType() const = 0;
-
-		protected:
-			si16 m_id;
+			NONE = -1,
+			MOUSE,
+			KEY
 		};
-	}
-}
+
+		Input();
+		virtual ~Input() {};
+
+		virtual si16 GetType() const = 0;
+
+	protected:
+		si16 m_id;
+	};
+} // mufise
 
 #endif // !_MF_INPUT_H

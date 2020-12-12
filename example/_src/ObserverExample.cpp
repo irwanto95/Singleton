@@ -1,7 +1,7 @@
 #include "mfpch.h"
 #include "ObserverExample.h"
 
-using namespace mufise::utils;
+using namespace mufise;
 
 Calculator::Calculator()
 {

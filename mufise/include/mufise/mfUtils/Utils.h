@@ -5,16 +5,13 @@
 
 namespace mufise
 {
-	namespace utils
+	class MFCUtils
 	{
-		class MFCUtils
-		{
-		public:
-			static LPCTSTR ToLPCTSTR(const std::string& str);
-			static LPCTSTR ToLPCTSTR(const char* str);
-		};
-	}
-}
+	public:
+		static LPCTSTR ToLPCTSTR(const std::string& str);
+		static LPCTSTR ToLPCTSTR(const char* str);
+	};
+} // mufise
 
 
 #endif // !MF_UTILS_H

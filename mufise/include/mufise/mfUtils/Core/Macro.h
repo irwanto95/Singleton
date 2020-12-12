@@ -15,7 +15,7 @@ _Type::iterator _var##End = _arr.end();		\
 #define MAKE_UNIQUE(Class)			typedef std::unique_ptr<Class>	Class##UPtr;
 #define MAKE_WEAK(Class)			typedef std::weak_ptr<Class>	Class##WPtr;
 
-#define DECL_SMART_PTR(Class)	\
+#define MAKE_SMART_PTR(Class)	\
 MAKE_SHARED(Class)				\
 MAKE_UNIQUE(Class)				\
 MAKE_WEAK(Class)				\
