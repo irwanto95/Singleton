@@ -1,5 +1,5 @@
-#ifndef _MF_MACRO_H
-#define _MF_MACRO_H
+#ifndef MFU_MACRO_H
+#define MFU_MACRO_H
 
 
 #define DECL_IT(_Type, _arr, _var)			\
@@ -29,4 +29,4 @@ MAKE_WEAK(Class)				\
 #define MakeHeader2(file)			#file
 
 
-#endif // !_MF_MACRO_H
+#endif // !MFU_MACRO_H

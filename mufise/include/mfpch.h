@@ -1,5 +1,5 @@
-#ifndef _MFU_PCH_H
-#define _MFU_PCH_H
+#ifndef MF_PCH_H
+#define MF_PCH_H
 
 #include <iostream>
 #include <vector>
@@ -10,4 +10,4 @@
 
 using namespace std;
 
-#endif // !_MFU_PCH_H
+#endif // !MF_PCH_H

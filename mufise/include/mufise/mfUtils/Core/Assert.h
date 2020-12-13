@@ -1,5 +1,5 @@
-#ifndef _MF_ASSERT_HPP
-#define _MF_ASSERT_HPP
+#ifndef MFU_ASSERT_H
+#define MFU_ASSERT_H
 
 #include <assert.h>
 #include "mufise/config.h"
@@ -12,4 +12,4 @@
 #define MF_ASSERT_MSG(x, ...)
 #endif // MF_USE_ASSERT
 
-#endif // !_MF_ASSERT_HPP
+#endif // !MFU_ASSERT_H

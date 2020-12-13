@@ -1,5 +1,5 @@
-#ifndef _MF_TYPES_H
-#define _MF_TYPES_H
+#ifndef MFU_TYPES_H
+#define MFU_TYPES_H
 
 #include <stdint.h>
 
@@ -52,4 +52,4 @@ namespace mufise
 #define LISTD(x)	typedef std::deque<x>
 } // mufise
 
-#endif // !_MF_TYPES_H
+#endif // !MFU_TYPES_H

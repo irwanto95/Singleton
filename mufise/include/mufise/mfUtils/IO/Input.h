@@ -1,5 +1,5 @@
-#ifndef _MF_INPUT_H
-#define _MF_INPUT_H
+#ifndef MFU_INPUT_H
+#define MFU_INPUT_H
 
 namespace mufise
 {
@@ -23,4 +23,4 @@ namespace mufise
 	};
 } // mufise
 
-#endif // !_MF_INPUT_H
+#endif // !MFU_INPUT_H

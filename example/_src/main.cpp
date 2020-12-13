@@ -8,6 +8,8 @@
 #include "mufise/mfUtils/IO/InputManager.h"
 #include "mufise/mfUtils/File/File.h"
 
+#include "mufise/mfUtils/Utils.h"
+
 #include "../../example/_src/ObserverExample.h"
 #include "../../example/_src/SingletonExample.h"
 
@@ -23,6 +25,9 @@ int main()
 	/*
 		mfUtils
 	*/
+	MFCUtils::ToLPCTSTR("Sultan");
+	MFCUtils::ToLPCTSTR(string("korwak"));
+
 	InputManager::CreateInstance();
 
 	DECL_SHARED(Calculator, cal)();

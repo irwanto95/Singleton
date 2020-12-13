@@ -1,5 +1,5 @@
-#ifndef _MF_MEMORY_H
-#define _MF_MEMORY_H
+#ifndef MFU_MEMORY_H
+#define MFU_MEMORY_H
 
 #define _CRTDBG_MAP_ALLOC
 
@@ -14,4 +14,4 @@
 #define newleak new
 #endif
 
-#endif // !_MF_MEMORY_H
+#endif // !MFU_MEMORY_H

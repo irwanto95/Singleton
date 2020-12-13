@@ -1,5 +1,5 @@
-#ifndef _MF_INPUT_OBSERVER_H
-#define _MF_INPUT_OBSERVER_H
+#ifndef MFU_INPUT_OBSERVER_H
+#define MFU_INPUT_OBSERVER_H
 
 #include "InputKey.h"
 
@@ -18,4 +18,4 @@ namespace mufise
 	MAKE_SMART_PTR(InputObserver);
 } // mufise
 
-#endif // !_MF_INPUT_OBSERVER_H
+#endif // !MFU_INPUT_OBSERVER_H

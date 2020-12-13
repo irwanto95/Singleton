@@ -1,5 +1,5 @@
-#ifndef _MF_SINGLETON_H
-#define _MF_SINGLETON_H
+#ifndef MFU_SINGLETON_H
+#define MFU_SINGLETON_H
 
 #include <iostream>
 
@@ -61,4 +61,4 @@ namespace mufise
 	}
 } // mufise
 
-#endif // !_MF_SINGLETON_H
+#endif // !MFU_SINGLETON_H

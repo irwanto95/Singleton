@@ -1,5 +1,5 @@
-#ifndef _MF_INPUT_KEY_H
-#define _MF_INPUT_KEY_H
+#ifndef MFU_INPUT_KEY_H
+#define MFU_INPUT_KEY_H
 
 #include "Input.h"
 
@@ -29,4 +29,4 @@ namespace mufise
 	};
 } // mufise
 
-#endif // !_MF_INPUT_KEY_H
+#endif // !MFU_INPUT_KEY_H

@@ -1,5 +1,5 @@
-#ifndef _MF_INPUT_MANAGER_H
-#define _MF_INPUT_MANAGER_H
+#ifndef MFU_INPUT_MANAGER_H
+#define MFU_INPUT_MANAGER_H
 
 #include "mufise/mfUtils/Singleton/Singleton.h"
 #include "InputKey.h"
@@ -33,4 +33,4 @@ namespace mufise
 	};
 } // mufise
 
-#endif // !_MF_INPUT_MANAGER_H
+#endif // !MFU_INPUT_MANAGER_H

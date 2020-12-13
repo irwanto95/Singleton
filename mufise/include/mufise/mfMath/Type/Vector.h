@@ -1,5 +1,5 @@
-#ifndef _MF_VECTOR_HPP
-#define _MF_VECTOR_HPP
+#ifndef MFU_VECTOR_H
+#define MFU_VECTOR_H
 
 #include <limits>
 #include "mufise/mfUtils/Core/Assert.h"
@@ -112,4 +112,4 @@ namespace mufise
 	typedef vector2<double>	vec2d;
 } // mufise
 
-#endif // !_MF_VECTOR_HPP
+#endif // !MFU_VECTOR_H

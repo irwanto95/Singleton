@@ -1,5 +1,5 @@
-#ifndef MF_UTILS_H
-#define MF_UTILS_H
+#ifndef MFU_UTILS_H
+#define MFU_UTILS_H
 
 #include "windows.h"
 
@@ -14,4 +14,4 @@ namespace mufise
 } // mufise
 
 
-#endif // !MF_UTILS_H
+#endif // !MFU_UTILS_H

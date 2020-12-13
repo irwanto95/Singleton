@@ -1,5 +1,5 @@
-#ifndef MF_FILE_H
-#define MF_FILE_H
+#ifndef MFU_FILE_H
+#define MFU_FILE_H
 
 #include <fstream>
 
@@ -53,4 +53,4 @@ namespace mufise
 	};
 } // mufise
 
-#endif // !MF_FILE_H
+#endif // !MFU_FILE_H
