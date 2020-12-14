@@ -21,6 +21,12 @@ namespace mufise
 		assert(tolerance >= 0);
 		return std::abs(s0 - s1) <= tolerance * std::max(1.0, std::max(abs(s0), abs(s1)));
 	}
+
+	template<typename _Type>
+	inline bool equals(_Type s0, _Type s1)
+	{
+		return s0 == s1;
+	}
 } // mufise
 
 #endif // MFM_COMMON_H
