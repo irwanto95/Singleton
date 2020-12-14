@@ -22,7 +22,7 @@
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{4F19D74B-DFB9-487C-8EAA-99461D544CBE}</ProjectGuid>
     <RootNamespace>mufise</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -41,7 +41,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
@@ -126,6 +126,7 @@
   <ItemGroup>
     <ClInclude Include="..\include\mfpch.h" />
     <ClInclude Include="..\include\mufise\config.h" />
+    <ClInclude Include="..\include\mufise\mfMath\common.h" />
     <ClInclude Include="..\include\mufise\mfMath\Type\Vector.h" />
     <ClInclude Include="..\include\mufise\mfUtils\config.h" />
     <ClInclude Include="..\include\mufise\mfUtils\Core\Assert.h" />
@@ -141,6 +142,7 @@
     <ClInclude Include="..\include\mufise\mfUtils\Utils.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\source\mfMath\common.cpp" />
     <ClCompile Include="..\source\mfpch.cpp" />
     <ClCompile Include="..\source\mfUtils\File\File.cpp" />
     <ClCompile Include="..\source\mfUtils\IO\Input.cpp" />

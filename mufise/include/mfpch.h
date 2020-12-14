@@ -8,6 +8,8 @@
 #include "mufise/mfUtils/Core/Macro.h"
 #include "mufise/mfUtils/Core/Types.h"
 
+#include "mufise/mfMath/common.h"
+
 using namespace std;
 
 #endif // !MF_PCH_H
