@@ -3,6 +3,8 @@
 
 namespace mufise
 {
+	WCHAR MFCUtils::s_LPCTSTR_placeholder[];
+
 	LPCTSTR MFCUtils::ToLPCTSTR(const std::string& str)
 	{
 		return ToLPCTSTR(str.c_str());
@@ -10,14 +12,11 @@ namespace mufise
 
 	LPCTSTR MFCUtils::ToLPCTSTR(const char* str)
 	{
-#ifdef UNICODE
 		const size_t sz = strlen(str) + 1;
-		wchar_t* wc = new wchar_t[sz];
-		mbstowcs(wc, str, sz);
+		MF_ASSERT(sz <= 2048);
 
-		return wc;
-#else
-		return LPCTSTR(str);
-#endif // UNICODE		
+		mbstowcs(s_LPCTSTR_placeholder, str, sz);
+
+		return s_LPCTSTR_placeholder;
 	}
 } // mufise

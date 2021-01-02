@@ -7,6 +7,9 @@ namespace mufise
 {
 	class MFCUtils
 	{
+	private:
+		static WCHAR s_LPCTSTR_placeholder[2048];
+	
 	public:
 		static LPCTSTR ToLPCTSTR(const std::string& str);
 		static LPCTSTR ToLPCTSTR(const char* str);
