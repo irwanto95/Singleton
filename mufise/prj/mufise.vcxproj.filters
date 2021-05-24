@@ -57,9 +57,6 @@
     <ClInclude Include="..\include\mufise\mfUtils\Core\Memory.h">
       <Filter>mfUtils\Core</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\mufise\mfUtils\Core\Macro.h">
-      <Filter>mfUtils\Core</Filter>
-    </ClInclude>
     <ClInclude Include="..\include\mufise\config.h" />
     <ClInclude Include="..\include\mufise\mfUtils\config.h">
       <Filter>mfUtils</Filter>
@@ -67,6 +64,9 @@
     <ClInclude Include="..\include\mfpch.h" />
     <ClInclude Include="..\include\mufise\mfMath\common.h">
       <Filter>mfMath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\mufise\mfUtils\Core\Macros.h">
+      <Filter>mfUtils\Core</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
